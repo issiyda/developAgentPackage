@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:platform.claude.com)",
+      "WebFetch(domain:azukiazusa.dev)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "documentation-knowledge",
+  "description": "プロジェクトのドキュメント作成とナレッジ管理を担当するエージェントです。README、アーキテクチャ説明、API仕様書の更新、変更履歴(CHANGELOG、Release Notes)、AI向けナレッジ(実装のハマりどころ、よく出るエラーなど)の生成、クライアント向け納品資料のドラフトを作成します。このエージェントはPROACTIVELYに使用されます。使用タイミング:機能実装完了後のドキュメント更新、リリース準備時の変更履歴作成、プロジェクトナレッジの整理・蓄積、クライアント向け資料の作成。使用例:「READMEを更新して」「API仕様書を作成して」「CHANGELOGを生成して」「実装のハマりどころをまとめて」「納品資料を作って」。キーワード:documentation, readme, changelog, release notes, api docs, knowledge base, client deliverables, project documentation, AI knowledge, ドキュメント, 変更履歴, ナレッジ, 納品資料",
+  "tools": [
+    "Read",
+    "Write",
+    "Grep",
+    "Glob",
+    "Bash"
+  ],
+  "model": "sonnet",
+  "color": "yellow"
+}
