@@ -2,9 +2,45 @@
   "permissions": {
     "allow": [
       "WebFetch(domain:platform.claude.com)",
-      "WebFetch(domain:azukiazusa.dev)"
+      "WebFetch(domain:azukiazusa.dev)",
+      "Bash(chmod:*)"
     ],
     "deny": [],
     "ask": []
+  },
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": ".claude/hooks/track-important-changes.sh Write \"$file_path\"",
+            "statusMessage": "重要な変更を記録中..."
+          }
+        ]
+      },
+      {
+        "matcher": "Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": ".claude/hooks/track-important-changes.sh Edit \"$file_path\"",
+            "statusMessage": "重要な変更を記録中..."
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": ".claude/hooks/capture-development-knowledge.sh \"$prompt\"",
+            "statusMessage": "開発知見を記録中..."
+          }
+        ]
+      }
+    ]
   }
 }

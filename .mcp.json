@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "codex": {
+      "command": "uvx",
+      "args": [
+        "--from",
+        "mcp-server-codex",
+        "mcp-server-codex"
+      ]
+    }
+  }
+}
