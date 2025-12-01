@@ -1,0 +1,18 @@
+{
+  "mcpServers": {
+    "codex": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@wong2/mcp-server-codex"
+      ]
+    },
+    "frontend-design": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "frontend-design@claude-code-plugins"
+      ]
+    }
+  }
+}

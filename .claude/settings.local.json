@@ -8,6 +8,9 @@
     "deny": [],
     "ask": []
   },
+  "enabledMcpjsonServers": [
+    "codex"
+  ],
   "hooks": {
     "PostToolUse": [
       {
@@ -42,5 +45,6 @@
         ]
       }
     ]
-  }
+  },
+  "enableAllProjectMcpServers": true
 }
